@@ -6,6 +6,7 @@ Registration form with the following fields
 - Phone Number
 - Password
 - Confirm Password
+
 Validation Criteria:
 - Name must not be less than 5 characters
 - Email Id should have @ character in it
