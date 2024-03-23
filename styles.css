@@ -1,0 +1,37 @@
+/* Styles for the container */
+.container {
+    border: 5px solid orange; /* Border style for the container */
+    width: fit-content; /* Adjusting container width to fit its content */
+    background-color: rgb(250, 249, 215); /* Background color for the container */
+}
+
+/* Styles for table cells */
+td {
+    font-size: 20px; /* Font size for table cells */
+    color: purple; /* Text color for table cells */
+    font-weight: bold; /* Font weight for table cells */
+}
+
+/* Styles for input elements */
+input {
+    border: 1px solid; /* Border style for input elements */
+    border-radius: 5px; /* Border radius for input elements */
+}
+
+/* Styles for buttons */
+button {
+    margin-left: 180px; /* Margin to position the button */
+}
+
+/* Error message styles */
+.error {
+    color: red; /* Text color for error messages */
+    font-size: 0.8em; /* Font size for error messages */
+}
+
+/* Styles for heading */
+.heading {
+    background-color: pink; /* Background color for heading */
+    font-weight: bold; /* Font weight for heading */
+    color: brown; /* Text color for heading */
+}
