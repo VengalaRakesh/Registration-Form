@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form Validation</title>
+		<!-- Using Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- Adding external CSS -->
+		<link rel="stylesheet" href="styles.css">
+		 <!-- Adding external script file -->
+		<script src="script.js"></script>
+	</head>
+	<body>		
+		<div class="container">
+			<!-- Registration Form -->
+			<!-- When form is submitted onsubmit will be executed -->
+			<form onsubmit="return validateForm()">
+				<h3 align="center" class="heading">REGISTRATION FORM</h3>
+				<table  align="center" cellpadding="14px">
+					<!-- Full Name Field -->
+					<tr>
+						<td>Full Name:</td>
+						<td>
+							<input type="text" id="fullName" onchange="validateName()"/><br>
+							<b id="fullNameError" class="error"></b> <!-- Error message for Full Name -->
+						</td>
+					</tr>
+					<!-- Gender Field -->
+					<tr>
+						<td>Gender:</td>
+						<td>
+							<!-- Radio buttons for gender selection -->
+							<input type="radio" name="gender" value="male" onchange="validateGender()"/>Male
+							<input type="radio" name="gender" value="female" onchange="validateGender()"/>Female
+							<input type="radio" name="gender" value="others" onchange="validateGender()"/>Others<br>
+							<b id="genderError" class="error"></b> <!-- Error message for Gender -->
+						</td>
+					</tr>
+					<!-- Date of Birth Field -->
+					<tr>
+						<td>Date Of Birth:</td>
+						<td>
+							<input id="dob" type="date" onchange="validateDOB()"/><br>
+							<b id="dobError" class="error"></b> <!-- Error message for Date of Birth -->
+						</td>
+					</tr>
+					<!-- Email ID Field -->
+					<tr>
+						<td>Email ID:</td>
+						<td>
+							<input type="email" id="email" onchange="validateEmail()"/><br>
+							<b id="emailError" class="error"></b> <!-- Error message for Email ID -->
+						</td>
+					</tr>
+					<!-- Phone Number Field -->
+					<tr>
+						<td>Phone Number:</td>
+						<td>
+							<input type="tel" id="phoneNumber" onchange="validatePhoneNumber()"/><br>
+							<b id="phoneError" class="error"></b> <!-- Error message for Phone Number -->
+						</td>
+					</tr>
+					<!-- Password Field -->
+					<tr>
+						<td>Password:</td>
+						<td>
+							<input type="password" id="password" onchange="validatePassword()"/><br>
+							<b id="passwordError" class="error"></b> <!-- Error message for Password -->
+						</td>
+					</tr>
+					<!-- Confirm Password Field -->
+					<tr>
+						<td>Confirm Password:</td>
+						<td>
+							<input type="password" id="confirmPassword" onchange="validateConfirmPassword()"/><br>
+							<b id="confirmPasswordError" class="error"></b> <!-- Error message for Confirm Password -->
+						</td>
+					</tr>
+				</table>
+				<!-- Submit Button -->
+				<button type="submit" class="btn btn-primary">Register</button>
+			</form>  
+			<h5></h5>
+		</div> 
+	</body>
+</html>
